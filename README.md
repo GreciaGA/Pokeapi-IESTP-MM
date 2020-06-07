@@ -15,5 +15,10 @@ En la vista se muestran las imágenes de cada pokemon, con sus nombres y sus car
 Adicionalmente, se visualiza un input para ingresar el nombre del pokemon y poder buscarlo.
 Se muestra una opción para filtrar a cada pokemón según la característica que decidas (puede ser filtro por tipo de pokemón o por la característica que tú decidas)
 
+#### Ejemplo.
+
+*El diseño es libre, y aquí tienes un ejemplo.*
+
 ![vista principal](https://github.com/GreciaGA/Pokeapi-IESTP-MM/blob/master/src/img/poke.jpg)
 
+![vista principal](https://github.com/GreciaGA/Pokeapi-IESTP-MM/blob/master/src/img/buscador-ejem.jpg)
