@@ -9,7 +9,7 @@ function allPokes(pokes) {
                   <p class"p-id">${pokemon.id}</p>
                   <p class"p-num">${pokemon.num}</p>
                   <p class"p-name">${pokemon.name}</p>
-                  <div class"div-img">${pokemon.img}</div>
+                  <img src="${pokemon.img}" alt="">
                   <p class"p-type">${pokemon.type}</p>
                   <p class"p-condicion">${pokemon.height}</p>
                   <p class"p-weight">${pokemon.weight}</p>
