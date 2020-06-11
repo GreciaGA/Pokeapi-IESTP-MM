@@ -16,6 +16,13 @@ function allPokes(pokes) {
                   <p class"p-cobra">${pokemon.candy}</p>
                   <p class"p-cobra">${pokemon.candy_count}</p>
                   <p class"p-cobra">${pokemon.egg}</p>
+                  <p class"p-cobra">${pokemon.spawn_chance}</p>
+                  <p class"p-cobra">${pokemon.avg_spawns}</p>
+                  <p class"p-cobra">${pokemon.spawn_time}</p>
+                  <p class"p-cobra">${pokemon.multipliers}</p>
+                  <p class"p-cobra">${pokemon.weaknesses}</p>
+                  <p class"p-cobra">${pokemon.next_evolution}</p>
+                  <p class"p-cobra">${pokemon.prev_evolution}</p>
 
             </div>
       `)}
