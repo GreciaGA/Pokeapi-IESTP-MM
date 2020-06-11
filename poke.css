@@ -1,7 +1,34 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+
+body{
+      background: linear-gradient(to right,red, blue);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+}
+
+.container{
+      display: flex;
+      background-color: blueviolet;
+      height: 420px;
+      width: 800px;
+}
+.contbuscar{
+      background-color: grey;
+      width: 700px;
+}
+
 .cont-result{
       background-color: red;
+      width: 100%;
 }
 
 .cont-Pokemones{
-      border:  1px solid blue;
+      background-color: green;
+      text-align: center;
 }
