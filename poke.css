@@ -87,6 +87,7 @@ h1::selection{
 }
 .cont-result{
       width: 100%;
+      transition: 0.5s ease;
 }
 
 .cont-Pokemones{
@@ -229,4 +230,9 @@ p{
 .btnPoke:hover span:nth-child(4){
       height: 100%;
       transform: translateY(-100%);
+}
+
+#result{
+      display: none;
+      transition: 1s ease;
 }
