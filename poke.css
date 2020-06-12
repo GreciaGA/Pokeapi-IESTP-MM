@@ -4,31 +4,229 @@
 }
 
 body{
-      background: linear-gradient(to right,red, blue);
-      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
-      
+      align-items: center;
+      background: linear-gradient(-30deg, #1ec4e9 0%, #673ab7 50%, #262626 50%, #607d8b 100%);
 }
+
 
 .container{
       display: flex;
-      background-color: blueviolet;
+      /* background-color: rgba(137, 43, 226, 0.493); */
       height: 420px;
       width: 800px;
+      background: linear-gradient(-30deg, #683ab763 50%, #26262681 70%);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 10px rgb(51, 50, 50);
+}
+.container::before{
+      content: '';
+      position: absolute;
+      background: linear-gradient(-30deg, #683ab763 50%, #26262681 70%);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: blur(14px);
+}
+.container::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
 }
 .contbuscar{
-      background-color: grey;
       width: 700px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      position: relative;
 }
 
+@font-face{
+      font-family: 'JCardenas';
+      src: url(PermanentMarker-Regular.ttf);
+}
+
+.txtPoke{
+      padding: 10px;
+      width: 300px;
+      letter-spacing: 1px;
+      font-size: 12px;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid gray;
+      outline: none;
+      color: rgba(0, 255, 179, 0.541);
+}
+.txtPoke:hover{
+      border-bottom: 1px solid rgba(0, 255, 178, 0.2);
+}
+.txtPoke:focus{
+      border-bottom: 1px solid rgba(0, 255, 179, 0.541);
+}
+.txtPoke::placeholder{
+      font-family: 'Century Gothic';
+}
+
+h1{
+      font-family: 'JCardenas';
+      color: rgba(0, 0, 0, 0.513);
+      font-size: 28px;
+      letter-spacing: 2px;
+}
+h1::selection{
+      background-color: transparent;
+}
 .cont-result{
-      background-color: red;
       width: 100%;
 }
 
 .cont-Pokemones{
-      background-color: green;
-      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      /* display: none; */
+      font-family: sans-serif;
+      color: white;
+      height: 100%;
+}
+img{
+      width: 200px;
+      height: 200px;
+}
+
+.cont-datas{
+      letter-spacing: 1px;
+      color: black;
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+.data1{
+      height: 100%;
+      width: 400px;
+      margin-bottom: 10px;
+      margin-right: 5px;
+}
+.data2{
+      margin-bottom: 10px;
+}
+p{
+      margin-top: 5px;
+}
+.btnPoke{
+      position: relative;
+      padding: 15px;
+      width: 100px;
+      color: #fff;
+      font-size: 12px;
+      font-family: 'JCardenas';
+      letter-spacing: 8px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .1);
+      box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+      cursor: pointer;
+}
+
+.btnPoke::selection{
+      background: transparent;
+}
+
+.btnPoke::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, .1);
+      filter: blur(4px);
+}
+
+.btnPoke::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.4),transparent);
+      transition: 0.5s;
+      transition-delay: 0.5s;
+}
+
+.btnPoke:hover::after{
+      left: 100%;
+}
+
+.btnPoke span{
+      position: absolute;
+      display: block;
+      transition: 0.5s ease;
+}
+
+.btnPoke span:nth-child(1){
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #fff;
+}
+
+
+.btnPoke:hover span:nth-child(1){
+      width: 100%;
+      transform: translateX(100%);
+}
+
+
+.btnPoke span:nth-child(3){
+      bottom: 0;
+      right: 0;
+      width: 0;
+      height: 1px;
+      background: #fff;
+}
+
+
+.btnPoke:hover span:nth-child(3){
+      width: 100%;
+      transform: translateX(-100%);
+}
+
+.btnPoke span:nth-child(2){
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 0;
+      background: #fff;
+}
+
+
+.btnPoke:hover span:nth-child(2){
+      height: 100%;
+      transform: translateY(100%);
+}
+
+.btnPoke span:nth-child(4){
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      height: 0;
+      background: #fff;
+}
+
+
+.btnPoke:hover span:nth-child(4){
+      height: 100%;
+      transform: translateY(-100%);
 }
